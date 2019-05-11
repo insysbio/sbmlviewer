@@ -6,6 +6,10 @@
     "Evgeny Metelkin",
     "Victoria Tkachenko"
   ],
+  "bin": {
+    "sbmlviewer": "./bin/sbmlviewer.js",
+    "sbmlviewer-transform": "./bin/sbmlviewer-transform.js"
+  },
   "private": false,
   "repository": "github:insysbio/SbmlViewer",
   "bugs": {
@@ -21,11 +25,16 @@
   },
   "dependencies": {
     "code-prettify": "^0.1.0",
+    "commander": "^2.19.0",
     "html-webpack-plugin": "^3.2.0",
+    "libxslt": "git+https://github.com/alexdee2007/node-libxslt.git",
+    "node-libxslt": "git+https://github.com/alexdee2007/node-libxslt.git",
     "pretty-data": "^0.40.0",
     "vue": "^2.5.21",
     "w3css": "^2.7.0",
-    "xml-escape": "^1.1.0"
+    "xml-escape": "^1.1.0",
+    "xmldom": "^0.1.27",
+    "xth": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -50,6 +59,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.7.1",
+    "executive": "^1.6.3",
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
